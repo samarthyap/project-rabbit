@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    line-height: 1.6;
+}
+
+nav {
+    height: 64px;
+    background-color: rgb(231, 38, 38);
+}
+
+.nav_items {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding-top: 8px;
+    list-style: none;
+}
+
+.nav_items>li:nth-last-child() {
+    color: aliceblue;
+}
+
+.nav_items>li>a:hover {
+    color: yellow;
+}
+
+.hero_text {
+    padding: 8px;
+    outline: solid orange 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero {
+    height: 35vh;
+    gap: 16px;
+    display: flex;
+    justify-content: flex-start;
+    outline: solid orange 5px;
+}
+
+.hero img {
+    outline: solid yellow 2px;
+    height: 35vh;
+}
+
+.Signup {
+    background-color: red;
+    width: 64px;
+
+}
+
+.box {
+    outline: purple solid 5px;
+    width: 128px;
+    height: 128px;
+    background-color: blue;
+}
+
+
+.carasoul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.boxes {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+.quote_text {
+    height: 35vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote_text>blockquote::first-letter {
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+blockquote {
+    quotes: "“" "”" "‘" "’";
+}
+
+.quotes {
+    padding-top: 10vh;
+}
+
+.footer_text {
+    background-color: wheat;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+}
